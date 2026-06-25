@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安博体育 · 稳定的入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f6f3ef;
+      font-family: 'Georgia', 'Times New Roman', '宋体', Songti SC, serif;
+      color: #2f2e2b;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #fefcf8;
+      padding: 3rem 2.5rem;
+      border-radius: 2px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.03);
+    }
+
+    /* 开场短句 */
+    .opening {
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #3d3a35;
+      border-left: 4px solid #b8a99a;
+      padding-left: 1.2rem;
+      margin-bottom: 2rem;
+      font-style: normal;
+    }
+
+    .opening em {
+      font-style: italic;
+      color: #7f6e5d;
+    }
+
+    /* 承接段落 */
+    .intro p {
+      margin-bottom: 1.4rem;
+      text-indent: 2em;
+      font-size: 1.05rem;
+    }
+
+    .intro p:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .intro a {
+      color: #7f5f4b;
+      text-decoration: none;
+      border-bottom: 1px dotted #b8a18c;
+      transition: border-bottom 0.2s, color 0.2s;
+    }
+
+    .intro a:hover {
+      color: #4d3a2b;
+      border-bottom: 1px solid #4d3a2b;
+    }
+
+    /* 引用框 / 提示块 */
+    .note-box {
+      background: #f3efe8;
+      border-left: 4px solid #a78d78;
+      padding: 1.6rem 2rem;
+      margin: 2rem 0 2.2rem 0;
+      font-size: 0.98rem;
+      color: #3f3a33;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .note-box p {
+      text-indent: 0;
+      margin-bottom: 0.6rem;
+    }
+
+    .note-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .note-box .label {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7c6b59;
+      border: 1px solid #cfc2b6;
+      padding: 0.1rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+    }
+
+    /* 特点列表 */
+    .feature-list {
+      margin: 2.2rem 0 1.8rem 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding: 0.6rem 0 0.6rem 2rem;
+      border-bottom: 1px solid #e8e2d9;
+      font-size: 1rem;
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .feature-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0.6rem;
+      color: #a38d78;
+      font-weight: bold;
+      font-size: 1.3rem;
+      top: 0.45rem;
+    }
+
+    .feature-list strong {
+      font-weight: 500;
+      color: #4f4036;
+    }
+
+    /* 温和结尾 */
+    .closing {
+      margin-top: 2.8rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e4ddd2;
+      font-size: 0.98rem;
+      color: #5e554b;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .closing p {
+      margin-bottom: 0.6rem;
+    }
+
+    .closing a {
+      color: #7f5f4b;
+      text-decoration: none;
+      border-bottom: 1px dotted #c6b7a8;
+    }
+
+    .closing a:hover {
+      border-bottom: 1px solid #4d3a2b;
+    }
+
+    .closing .meta {
+      margin-top: 1.2rem;
+      font-size: 0.85rem;
+      color: #9a8c7e;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      .page {
+        padding: 2rem 1.2rem;
+      }
+      .opening {
+        font-size: 1.25rem;
+        padding-left: 1rem;
+      }
+      .intro p {
+        font-size: 0.98rem;
+      }
+      .note-box {
+        padding: 1.2rem 1.2rem;
+      }
+      .feature-list li {
+        padding-left: 1.6rem;
+        font-size: 0.95rem;
+      }
+      .feature-list li::before {
+        left: 0.2rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      body {
+        padding: 0.8rem;
+      }
+      .page {
+        padding: 1.5rem 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- 开场短句 -->
+    <div class="opening">
+      稳定，从来不是一次性的抵达，<br>
+      而是每一次打开时都不曾偏移的入口。
+    </div>
+
+    <!-- 承接段落 -->
+    <div class="intro">
+      <p>
+        在信息流动越来越快的日常里，人们往往忽略了最基础却最要紧的事——一个可以信赖的起点。
+        对于长期关注体育内容与赛事动态的用户来说，平台的可及性和页面的整体稳定感，往往比一时的功能堆叠更值得细谈。
+        这也是为什么我们始终觉得，<a href="https://china-anbosport.com">安博体育</a>这个名字之所以被反复提起，并不只是因为它的内容覆盖面广，更因为它提供了一个几乎感觉不到门槛的访问环境。
+      </p>
+      <p>
+        从页面加载的节奏到信息排布的层次，每一步都保持了某种不易察觉的克制——没有过度装饰，也没有多余的跳转。
+        对于一个以信息获取为主要目的的场景而言，这种看起来「平淡」的体验，反而是最值得书写的细节。
+      </p>
+    </div>
+
+    <!-- 引用块 / 提示框 -->
+    <div class="note-box">
+      <span class="label">一点说明</span>
+      <p>
+        很多时候，用户需要的不是更复杂的功能，而是一个能稳定打开、持续更新、路径清晰的站点。
+        入口本身，就是一种无声的承诺。
+      </p>
+    </div>
+
+    <!-- 特点列表 -->
+    <ul class="feature-list">
+      <li><strong>结构干净——</strong>内容区块之间留有恰好的呼吸感，没有无关弹窗或冗余模块干扰视线。</li>
+      <li><strong>响应直接——</strong>从首页到各个板块，跳转逻辑清晰，减少了不必要的中间页面。</li>
+      <li><strong>适配友好——</strong>不论在宽屏还是移动端，页面元素都能自然重排，不丢失重要信息。</li>
+      <li><strong>长期可访——</strong>域名与服务器保持稳定配置，降低因访问问题带来的挫败感。</li>
+    </ul>
+
+    <!-- 温和结尾 -->
+    <div class="closing">
+      <p>
+        一个稳定的入口，往往意味着更低的决策成本。当你想了解体育动态、查阅相关内容时，不需要反复确认地址或等待漫长的加载。
+        这大概就是<a href="https://china-anbosport.com">安博体育</a>在众多平台中让人印象沉稳的原因——它把力气花在了用户看不见的地方。
+      </p>
+      <p>
+        如果你还没有试过从那个链接开始，不妨在需要的时候自然地去一次。
+        好的入口，通常不需要被催促，它只是安静地等在那里。
+      </p>
+      <div class="meta">
+        —— 页面的意义，有时恰恰在于它不必成为焦点。
+      </div>
+    </div>
+  </div>
+</body>
+</html>
